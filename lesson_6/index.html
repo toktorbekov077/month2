@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>просто блок</h1>
+    </div>
+<main id="blog-posts">
+
+</main>
+
+    <form id="blog-form">
+        <h2>добавить статью</h2>
+        <label for="title">Заголовок</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="content">Содержание</label>
+        <textarea name="content" id="content"  rows="4"></textarea>
+        <button onclick="addBlogPost()">Опубликовать</button>
+    </form>
+
+</body>
+<script src="app.js"></script>
+</html>

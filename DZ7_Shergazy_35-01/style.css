@@ -1,8 +1,25 @@
-.riddle {
-    height: 483px;
-    background-color: silver;
-    border-radius: 6px;
-    margin-top: 48px;
-    margin-left: 144px;
-    display: inline-block;
+
+.wrapper {
+    background-color: lightgreen;
+}
+.riddle_1 {
+    text-align: center;
+
+}
+
+.container {
+    background-color: cyan;
+    width: 368px;
+    height: 160px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+}
+.answer {
+    display: none;
+}
+.container.show-answer .answer {
+    display: block;
 }

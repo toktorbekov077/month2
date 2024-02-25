@@ -1,15 +1,14 @@
-
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleButtons = document.querySelectorAll('.toggle-button');
+    const toggles = document.querySelectorAll('.toggle');
 
-    toggleButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            const answer = this.nextElementSibling;
-            answer.classList.toggle('hidden');
-            if (answer.classList.contains('hidden')) {
-                this.textContent = 'Показать ответ';
+    toggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            const container = toggle.parentNode;
+            container.classList.toggle('show-answer');
+            if (container.classList.contains('show-answer')) {
+                toggle.textContent = 'Скрыть ответ';
             } else {
-                this.textContent = 'Скрыть ответ';
+                toggle.textContent = 'Показать ответ';
             }
         });
     });

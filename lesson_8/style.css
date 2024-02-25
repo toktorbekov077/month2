@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+.slides {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+
+}

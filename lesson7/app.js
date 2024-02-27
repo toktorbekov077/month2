@@ -95,14 +95,14 @@ const movies = [
     {title: 'Willy Wonka' , rating:5 , year: 2024, director: 'Christopher Nolan'}
 ]
 
-function fotmatMovieInfo (movie) {
+function formatMovieInfo (movie) {
     return ` ${movie.title} (${movie.year} direct by ${movie.director})
     rating: ${movie.rating} additional info: ${movie.additionalInfo}`
 }
 
 const  newMoviesArray = movies
     .filter((movie) => movie.rating >= 6)
-    .map(fotmatMovieInfo)
+    .map(formatMovieInfo)
     .sort((a , b) => b.year - a.year)
 
 newMoviesArray.forEach(() =>{
